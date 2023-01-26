@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador</title>
+    <meta name="keyword" content="Gerador de E-mail" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img class="logo" src="png-2702691_960_720.png" alt="gato" />
+
+    <main class="container-input">
+      <span>Size <span id="valor"></span> Characters</span>
+      <input id="slider" class="slider" type="range" min="5" max="15" value="7">
+      <button id="button" class="button-cta" onclick="generationPassword()">Generate random email</button>
+
+    </main>
+    <div  onclick="copyPassword()"  id="container-password" class="container-password hide">
+
+    <span class="title">Your email generated:</span>
+    <span id="password" class="password"></span>
+    <span class="tooltip">Click to copy👌</span>
+
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
